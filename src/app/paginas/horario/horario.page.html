@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding"></ion-icon>
+    <ion-title>
+      Inicio 
+    </ion-title>
+    <ion-text slot="end" >
+      <p>{{username || 'Alumno'}}</p>
+    </ion-text>
+
+     <ion-buttons slot="end"> 
+    <ion-avatar>
+      <img src="/assets/perro.jpg"
+     class="ion-padding" size="large">
+    </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h3><center>Datos del Alumno</center></h3>
+<center><img src="assets/yo.png"/></center>
+
+<ion-list *ngIf = "info">
+ 
+<ion-item>
+  <ion-label>
+    <h2>Nombre alumno:</h2>{{info.nombre}}
+  </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label>
+    <h2>Rut:</h2>{{info.rut}}
+  </ion-label>
+</ion-item>
+<ion-item>
+  <ion-label>
+    <h2>Correo:</h2>{{info.correo}}
+  </ion-label>
+</ion-item>
+
+<ion-item>
+  <ion-label>
+    <h2>Situacion: </h2>{{info.perfil}}
+  </ion-label>
+</ion-item>
+</ion-list>
+
+ 
+    
+
+  
+</ion-content>

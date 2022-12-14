@@ -1,0 +1,66 @@
+
+<ion-content class="sign-container gradient-1">
+  
+  <div class="header">
+    <div class="title ion-text-center">
+     <img src="https://i.ibb.co/vswTRbq/registrapp-2-removebg-preview.png" alt="">
+     <ion-text color="light">
+      <ion-text color="light" class="ion-text-center ion-text-capitalize">
+        <h2>Registro Alumno</h2>
+      </ion-text>
+      <h5>Indica tus datos de registro.</h5>
+    </ion-text>
+   </div>
+ </div>
+ 
+  <div class="login-container">
+   
+
+    
+
+    <ion-list lines="none" class="form fade-in">
+
+      <ion-item>
+        <ion-label position="floating">Nombre y Apellido</ion-label>
+        <ion-input [(ngModel)]="datos.nombre"></ion-input>
+        <ion-icon slot="end" name="person-outline"></ion-icon>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-label position="floating">Rut</ion-label>
+        <ion-input type="number" [(ngModel)]="datos.rut"></ion-input>
+        <ion-icon slot="end" name="key-outline"></ion-icon>
+      </ion-item>
+
+      <ion-item>
+        <ion-label position="floating">Correo</ion-label>
+        <ion-input [(ngModel)]="datos.correo"></ion-input>
+        <ion-icon slot="end" name="mail-outline"></ion-icon>
+      </ion-item>
+
+      
+        <ion-item>
+          <ion-label position="floating">Contraseña</ion-label>
+          <ion-input type="password" [(ngModel)]="datos.password"></ion-input>
+          <ion-icon slot="end" name="lock-open-outline"></ion-icon>
+        </ion-item>
+      </ion-list>
+
+
+
+      <div class="ion-text-center">
+        <ion-button class="green-button" (click) ="registrar()">
+          Registrarse
+        </ion-button>
+      </div>
+      <br>
+
+      <div class="ion-text-center">
+        <ion-button class="green-button" [routerLink]="['/home']">Iniciar Sesion</ion-button>
+      </div>
+      
+
+  </div>
+
+</ion-content>

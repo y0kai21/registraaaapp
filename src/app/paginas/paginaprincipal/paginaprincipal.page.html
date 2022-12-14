@@ -1,0 +1,54 @@
+
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding" (click)="verMenu()"></ion-icon>
+    <ion-title>
+      Inicio 
+    </ion-title>
+    <ion-text slot="end" >
+      <p>{{username || 'Alumno'}}</p>
+    </ion-text>
+     <ion-buttons slot="end"> 
+    <ion-avatar>
+      <img src="/assets/perro.jpg"
+     class="ion-padding" size="large">
+    </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content>
+  
+  
+
+ 
+  
+  <div class="animated bounceInUp" class="background-image">
+    <div class="top">
+      <div class="nameText" >
+    <p>Bienvenido <span>{{usuario || 'Alumno'}}, buen dia.</span></p>
+    <h6>Seccion 06 | Informatica</h6>
+  </div>
+</div>
+
+
+   
+<div class="bottomDiv" >
+  <div class="gridDiv" >
+    <button class="box" *ngFor="let item of cajas" [routerLink]="[item.url] "> 
+    <img src="../../../assets/{{item.image}}" >
+    <p>{{item.title}}</p>
+    
+
+  </button>
+
+  </div>
+
+</div>
+</div>
+
+</ion-content>
+
+

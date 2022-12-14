@@ -1,0 +1,49 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding"></ion-icon>
+    <ion-title>
+      Inicio 
+    </ion-title>
+    <ion-text slot="end" >
+      <p>{{username || 'Alumno'}}</p>
+    </ion-text>
+     <ion-buttons slot="end"> 
+    <ion-avatar>
+      <img src="/assets/perro.jpg"
+     class="ion-padding" size="large">
+    </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  
+<br>
+<center><ion-title>Asistencia de alumno</ion-title></center>
+<br>
+
+
+
+  <center><ion-button class="green-button">Lun</ion-button>
+  <ion-button class="green-button">Mar</ion-button>
+  <ion-button class="green-button">Mie</ion-button>
+  <ion-button class="green-button">Jue</ion-button>
+  <ion-button class="green-button">Vie</ion-button></center>
+
+  <ion-list *ngFor="let item of ['Ing de software','Estadistica descriptiva','Ingles Intermedio','Calidad de software','Arquitectura de software']" >
+    <ion-item>
+      <ion-label>
+        <h2>{{item}}</h2>
+        <h3>Presente</h3>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+
+  
+  
+  
+ 
+
+
+</ion-content>

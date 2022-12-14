@@ -1,0 +1,86 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding"></ion-icon>
+    <ion-title>
+      Inicio 
+    </ion-title>
+    <ion-text slot="end" >
+      <p>{{username || 'Alumno'}}</p>
+    </ion-text>
+     <ion-buttons slot="end"> 
+    <ion-avatar>
+      <img src="/assets/perro.jpg"
+     class="ion-padding" size="large">
+    </ion-avatar>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+<h3><center>Ayuda para nuevos usuarios</center></h3>
+<h6><center>Te dejamos una lista de las principales funcionalidades de la app.</center></h6>
+
+<ion-item *ngFor="let item of [0]" >
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Lector de QR</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      La funcion del lector de QR principalmente es que el propio alumno pueda dejar un registro de su asistencia a clases mediante la lectura de un codigo QR, para usarlo 
+      solo accede al apartado, y apunta la camara hacia el codigo que el profesor generara en pantalla, saldra un mensaje cuando escanees el codigo y estaras presente.
+    </ion-card-content>
+  </ion-card>
+</ion-item>
+
+<ion-item *ngFor="let item of [1]" >
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Mi asistencia</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      En este apartado, cuando accedas a el, podras ver tu asistencia, la asignatura, el dia y si estas presente o no.
+    </ion-card-content>
+  </ion-card>
+</ion-item>
+
+<ion-item *ngFor="let item of [2]" >
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Avisos de profesores</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      En este apartado se mostraran avisos de tus respectivos profesores, aqui puedes informarte acerca de, suspension de clases, recuperaciones, ajustes de horarios, etc.
+    </ion-card-content>
+  </ion-card>
+</ion-item>
+
+<ion-item *ngFor="let item of [3]" >
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Tus horarios de clases</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      En este apartado podras ver las respectivas clases a las cuales te toque asistir durante el dia, con sus respectivos horarios y la sala donde se hara la clase.
+    </ion-card-content>
+  </ion-card>
+</ion-item>
+
+<ion-item *ngFor="let item of [4]" >
+  <ion-card>
+    <ion-card-header>
+      
+      <ion-card-title>Mis ramos</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Aqui podras ver los distintos ramos que estas cursando en tu respectivo ciclo de aprendizaje.
+    </ion-card-content>
+  </ion-card>
+</ion-item>
+<br>
+<h6><center>Para mas dudas y consultas, nuestro correo: registrapp2022@gmail.com</center></h6>
+<br>
+</ion-content>

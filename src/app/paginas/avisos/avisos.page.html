@@ -1,0 +1,68 @@
+<ion-header>
+  <ion-toolbar color="medium">
+    <ion-icon slot="start" name="menu" size="large" class="ion-padding"></ion-icon>
+    <ion-title>
+      Inicio 
+    </ion-title>
+    <ion-text slot="end" >
+      <p>{{username || 'Alumno'}}</p>
+    </ion-text>
+
+     <ion-buttons slot="end"> 
+    <ion-avatar>
+      <img src="/assets/perro.jpg"
+     class="ion-padding" size="large">
+    </ion-avatar>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+
+
+  
+  <ion-content class="background-image">
+    <ion-item *ngFor="let item of [0]" >
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Avisos Certamentes</ion-card-subtitle>
+          <ion-card-title>Primera entrega aplicaciones moviles 09/09/22</ion-card-title>
+        </ion-card-header>
+        <ion-img src="/assets/ionicmin.png"></ion-img>
+        <ion-card-content>
+          Alumnos, para recordarles que el dia viernes es la primera entrega del proyecto de aplicaciones moviles, favor de no faltar 
+          y traer sus avances el dia jueves para revisar posibles errores y dudas, un saludo.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item *ngFor="let item of [1]" >
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Avisos Recuperacion</ion-card-subtitle>
+          <ion-card-title>Clase recuperacion Arquitectura y horarios</ion-card-title>
+        </ion-card-header>
+        <ion-img src="/assets/arquitectura.png"></ion-img>
+        <ion-card-content>
+          Estimados, junto con saludarlos, recordar que el dia martes se hara recuperacion de la clase que no tuvimos la
+          semana pasada, favor de venir ya que se pasara materia muy importante para el proximo certamen, desde las 13:00 hasta las 15:00 en la sala H613.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+
+    <ion-item *ngFor="let item of [2]" >
+      <ion-card>
+        <ion-card-header>
+          <ion-card-subtitle>Avisos Horarios</ion-card-subtitle>
+          <ion-card-title>Horarios para certamen Ingles</ion-card-title>
+        </ion-card-header>
+        <ion-img src="/assets/examen.jpg"></ion-img>
+        <ion-card-content>
+          Alumnos, recordarles que el dia de mañana desde las 12:30 hasta las 14:50 se realizara el segundo certamen de ingles, recordar la materia que vimos el dia de ayer
+          y favor de no faltar, un saludo.
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  
+    
+  </ion-content>

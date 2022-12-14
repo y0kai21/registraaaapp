@@ -1,0 +1,46 @@
+<ion-app>
+  <ion-menu side="start" menuId="first" contentId="main">
+    <ion-header>
+      <ion-toolbar color="medium">
+        <ion-title>Menu</ion-title>
+        <ion-icon slot="end" name="close" size="large" class="ion-padding"></ion-icon>
+      </ion-toolbar>
+    </ion-header>
+    <ion-content>
+      <ion-list>
+        <ion-item  detail routerLink="/paginaprincipal">
+          <ion-icon slot="start" name="home-outline"></ion-icon>
+          Inicio
+        </ion-item> 
+        <ion-item detail routerLink="/avisos">
+          <ion-icon slot="start" name="notifications-outline"></ion-icon>
+          Avisos
+        </ion-item>
+          <ion-item detail routerLink="/lectorqr">
+            <ion-icon slot="start" name="qr-code-outline"></ion-icon>
+          Asistencia QR 
+          </ion-item>
+          <ion-item detail routerLink="/miasistencia">
+            <ion-icon slot="start" name="man-outline"></ion-icon>
+          Mi asistencia
+          </ion-item>
+
+          <ion-menu-toggle>
+            <ion-item detail="true" (click)="logout()">
+              <ion-label>
+                Cerrar sesion
+              </ion-label>
+              <ion-icon slot="start" name="log-out-outline"></ion-icon>
+            </ion-item>
+          </ion-menu-toggle>
+
+         
+       
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+
+  
+  <ion-router-outlet id="main"></ion-router-outlet>
+  
+</ion-app>
